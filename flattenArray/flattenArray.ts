@@ -3,8 +3,8 @@ function flattenArray(arr: any[]): any[] {
 
   for(let i = 0; i < arr.length; i++){
     while(Array.isArray(arr[i])){
-      arr = arr.reduce((acc, el) => {
-        return acc.concat(el);
+      arr = arr.reduce((acc, element) => {
+        return acc.concat(element);
       }, []);
     }
   }
