@@ -3,13 +3,12 @@ function arrayMaxConsecutiveSum(inputArray: number[], k: number): number {
   let maximum = 0;
   let i = 0;
 
-  while(i + k <= inputArray.length) {
-    
+  while (i + k <= inputArray.length) {
     const slice = inputArray.slice(i, k + i);
 
-    const sum = slice.reduce((acc, num) => acc += num);
+    const sum = slice.reduce((acc, num) => (acc += num));
 
-    if(sum >= maximum) maximum = sum;
+    if (sum >= maximum) maximum = sum;
 
     i++;
   }
