@@ -1,15 +1,13 @@
 // Optimized version of the first solution
-function avoidObstacles(inputArray: number[]): number {
-  const arr: number[] = inputArray.sort((a, b) => a - b);
-  
+function avoidObstacles(inputArray: number[]): number {  
   let leap: number = 2; // minimum value to be able to jump over an element
- 
-    while(true) {
-      if(arr.every(num => num % leap !== 0)) {
-        return leap;
-      }
-      leap++;
+
+  while(true) {
+    if(inputArray.every(num => num % leap !== 0)) {
+      return leap;
     }
+    leap++;
+  }
 }
 
 console.log(avoidObstacles([5, 3, 6, 7, 9]));
