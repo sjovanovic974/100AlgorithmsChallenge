@@ -2,14 +2,13 @@
 function avoidObstacles(inputArray: number[]): number {
   const arr: number[] = inputArray.sort((a, b) => a - b);
   
-  let leap: number = 0;
-  let i: number = 2; // minimum value to be able to jump over an element
+  let leap: number = 2; // minimum value to be able to jump over an element
  
     while(true) {
-      if(arr.every(num => num % i !== 0)) {
-        return leap = i;
+      if(arr.every(num => num % leap !== 0)) {
+        return leap;
       }
-      i++;
+      leap++;
     }
 }
 
