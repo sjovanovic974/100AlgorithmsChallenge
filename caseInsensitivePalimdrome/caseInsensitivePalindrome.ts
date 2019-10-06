@@ -1,7 +1,10 @@
 // First solution
 function isCaseInsensitivePalindrome(inputString: string): boolean {
   inputString = inputString.toLowerCase();
-  const reversedString = inputString.split('').reverse().join('');
+  const reversedString = inputString
+    .split('')
+    .reverse()
+    .join('');
 
   return inputString === reversedString;
 }

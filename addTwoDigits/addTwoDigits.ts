@@ -1,5 +1,5 @@
 // One line solution that works only if we are sure that argument number has only two digits
-function addTwoDigits(n: string|number): number {
+function addTwoDigits(n: string | number): number {
   return parseInt(n.toString()[0]) + parseInt(n.toString()[1]);
 }
 

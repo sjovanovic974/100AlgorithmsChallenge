@@ -1,11 +1,15 @@
 // My solution using map()
-function arrayReplace(inputArray: number[], elemToReplace: number, substitutionElem: number): number[] {
+function arrayReplace(
+  inputArray: number[],
+  elemToReplace: number,
+  substitutionElem: number
+): number[] {
   const output = inputArray.map(num => {
-     if(num === elemToReplace) {
+    if (num === elemToReplace) {
       return substitutionElem;
-     } else {
+    } else {
       return num;
-     }
+    }
   });
   return output;
 }

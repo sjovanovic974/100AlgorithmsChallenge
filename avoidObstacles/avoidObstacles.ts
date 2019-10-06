@@ -1,9 +1,9 @@
 // Optimized version of the first solution
-function avoidObstacles(inputArray: number[]): number {  
+function avoidObstacles(inputArray: number[]): number {
   let leap: number = 2; // minimum value to be able to jump over an element
 
-  while(true) {
-    if(inputArray.every(num => num % leap !== 0)) {
+  while (true) {
+    if (inputArray.every(num => num % leap !== 0)) {
       return leap;
     }
     leap++;

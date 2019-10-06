@@ -1,9 +1,9 @@
 // Solution using sorting and conversion to string to enable
 // comparison of values
 function areSimilar(a: number[], b: number[]): boolean {
-   const sortedA = a.sort((x, y) => x - y);
-   const sortedB = b.sort((x, y) => x - y);
-   return sortedA.toString() === sortedB.toString();
+  const sortedA = a.sort((x, y) => x - y);
+  const sortedB = b.sort((x, y) => x - y);
+  return sortedA.toString() === sortedB.toString();
 }
 
 console.log(areSimilar([1, 2, 3], [1, 2, 3]));

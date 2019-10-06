@@ -1,6 +1,13 @@
 //Simple solution to check for palindromes
 function checkPalindrome(inputString: string): boolean {
-  return inputString.toLowerCase() === inputString.split('').reverse().join('').toLowerCase();
+  return (
+    inputString.toLowerCase() ===
+    inputString
+      .split('')
+      .reverse()
+      .join('')
+      .toLowerCase()
+  );
 }
 
 console.log(checkPalindrome('aabaa'));
