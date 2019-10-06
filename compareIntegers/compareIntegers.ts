@@ -1,3 +1,4 @@
+// First solution
 function compareIntegers(a: string, b: string): string {
   const x = parseInt(a);
   const y = parseInt(b);
