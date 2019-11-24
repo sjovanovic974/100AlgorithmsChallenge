@@ -10,9 +10,9 @@ function proCategorization(pros, preferences) {
   preferences = preferences.reduce((acc, el) => acc.concat(el));
   preferences = preferences.sort();
 
-  const finalList = new Set(preferences);
+  const finalPrefList = new Set(preferences);
 
-  finalList.forEach(preference => {
+  finalPrefList.forEach(preference => {
     const pref = [preference];
     const users = [];
     for (let pros in map) {
