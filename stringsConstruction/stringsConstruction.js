@@ -1,7 +1,7 @@
 // First solution
 function stringsConstruction(a, b) {
   const obj = {};
-  for (var i = 0; i < a.length; i++) {
+  for (let i = 0; i < a.length; i++) {
     obj[a[i]] = 0;
   }
 
