@@ -26,5 +26,5 @@ function sumOfTwo(a, b, v) {
   return false;
 }
 console.log(sumOfTwo([1, 2, 3], [10, 20, 30, 40], 42));
-O(n^2) in fact O(a * b)
+O(n^2) <= O(a * b)
 ************************************************************/
