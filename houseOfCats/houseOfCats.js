@@ -11,7 +11,7 @@ function houseOfCats(legs) {
   const range = Math.floor(legs / catLegs);
 
   for (let i = 1; i <= range; i++) {
-    if (result[0] && result.length === 1) {
+    if (result.length === 1) {
       result.push(result[0] + humanlegs);
     } else if (result.length === 0) {
       result.push(humanlegs);
