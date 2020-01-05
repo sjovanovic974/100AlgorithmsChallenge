@@ -1,6 +1,7 @@
+// First solution
 function sumOddFibonacciNums(num: number): number {
   let total = 0;
-  let firstNumber: number = 1;
+  let firstNumber: number = 0;
   let secondNumber: number = 1;
 
   while (secondNumber <= num) {
